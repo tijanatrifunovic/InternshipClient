@@ -1,0 +1,52 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 7, 2018, 1:57:07 PM
+    Author     : tijana.trifunovic
+*/
+body {
+    background: url('../images/pattern1.jpg') no-repeat bottom center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+a {
+    color: gray;
+}
+
+a:hover {
+    color: black;
+}
+
+.active {
+    color: black;
+    font-weight: 500;
+}
+
+#login, #register{
+    width: 70%;
+    padding: 10%;
+    margin-left: 15%;
+}
+
+.alert {
+    bottom: 0px;
+    width: 30%;
+    right: 0px;
+    float: right;
+    position: fixed;
+    margin: 1%;
+}
+
+p {    
+     margin-bottom: 0;
+}
+
+.btn-dark {
+    float: right;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Internship</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/login.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" >|</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="register.html">Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" >|</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="login.html">Log in</a>
+            </li>
+        </ul>
+
+        <div id="login">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Log in</h5>
+                    <form>
+
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password" required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="userTypeSelect">User type</label>
+                            </div>
+                            <select class="custom-select" id="userTypeSelect" required>
+                                <option selected value="">Choose...</option>
+                                <option value="1">Student</option>
+                                <option value="2">Company</option>
+                            </select>
+
+                        </div>
+                        <button type="button" class="btn btn-dark" id="loginButton">Log in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="alert alert-dismissible fade" role="alert" id="alert">
+            <p id="alertMessage"></p>
+            <button type="button" id="closeAlert" class="close"  aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </body>
+</html>
